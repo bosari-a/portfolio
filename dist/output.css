@@ -551,8 +551,78 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-wrap {
@@ -561,6 +631,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -579,6 +653,10 @@ video {
   gap: 1.25rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -593,9 +671,22 @@ video {
   background-color: rgb(4 41 58 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-lg {
@@ -605,6 +696,11 @@ video {
 
 .text-xl {
   font-size: clamp(1.42rem, calc(1.06rem + 1.80vw), 2.34rem);
+  line-height: 1.4;
+}
+
+.text-sm {
+  font-size: clamp(1.00rem, calc(0.92rem + 0.39vw), 1.20rem);
   line-height: 1.4;
 }
 
@@ -689,6 +785,11 @@ video {
   .md\:gap-10 {
     gap: 2.5rem;
   }
+
+  .md\:text-lg {
+    font-size: clamp(1.27rem, calc(1.03rem + 1.19vw), 1.88rem);
+    line-height: 1.4;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -704,5 +805,15 @@ video {
   .lg\:text-3xl {
     font-size: clamp(1.80rem, calc(1.08rem + 3.63vw), 3.66rem);
     line-height: 1.1;
+  }
+
+  .lg\:text-xl {
+    font-size: clamp(1.42rem, calc(1.06rem + 1.80vw), 2.34rem);
+    line-height: 1.4;
+  }
+
+  .lg\:text-lg {
+    font-size: clamp(1.27rem, calc(1.03rem + 1.19vw), 1.88rem);
+    line-height: 1.4;
   }
 }
